@@ -176,7 +176,7 @@ p = figure(
 
 p.circle('x', 'y', source=valid_source, color='blue', size=6, legend_label='Valid (≤20 cm)')
 p.cross('x', 'y', source=invalid_source, color='red', size=8, legend_label='Invalid (>20 cm)')
-p.line('x', 'y', source=smooth_source, line_width=2, legend_label='5-pt MA', line_color='green')
+p.line('x', 'y', source=smooth_source, line_width=2, legend_label='3-pt MA', line_color='green')
 
 p.legend.location = 'top_right'
 layout = column(p)

@@ -182,7 +182,7 @@ if __name__ == "__main__":
     fig, ax = plt.subplots()
     valid_line,    = ax.plot([], [], 'bo', label='Valid (≤20 cm)')
     invalid_line,  = ax.plot([], [], 'rx', label='Invalid (>20 cm)')
-    smooth_line,   = ax.plot([], [], 'g-', lw=2, label='5-pt MA')
+    smooth_line,   = ax.plot([], [], 'g-', lw=2, label='3-pt MA')
     ax.set_xlim(0, 10)
     ax.set_ylim(0, 20)
     ax.set_xlabel('Time [s]')
